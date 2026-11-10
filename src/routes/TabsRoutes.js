@@ -17,6 +17,7 @@ export function TabRoutes() {
         headerStyle: { backgroundColor: cores.primaria },
         headerTintColor: cores.branco,
         headerTitleStyle: { fontWeight: 'bold' },
+        animation: 'fade',
       }}
     >
       {/* <Tab.Screen
@@ -29,6 +30,8 @@ export function TabRoutes() {
         component={ImcScreen}
         options={{
           tabBarLabel: 'IMC',
+          tabBarLabelPosition: 'beside-icon',
+          tabBarLabelStyle: { fontWeight: 'bold', color: cores.imc },
           tabBarIcon: () => (
             <MaterialIcons name='calculate' size={24} color={cores.imc} />
           ),
@@ -39,6 +42,8 @@ export function TabRoutes() {
         component={ClimaScreen}
         options={{
           tabBarLabel: 'Tempo',
+          tabBarLabelPosition: 'beside-icon',
+          tabBarLabelStyle: { fontWeight: 'bold', color: cores.clima },
           tabBarIcon: () => (
             <MaterialIcons name='cloud' size={24} color={cores.clima} />
           ),
@@ -49,6 +54,8 @@ export function TabRoutes() {
         component={DolarScreen}
         options={{
           tabBarLabel: 'Dolar',
+          tabBarLabelPosition: 'beside-icon',
+          tabBarLabelStyle: { fontWeight: 'bold', color: cores.dolar },
           tabBarIcon: () => (
             <MaterialIcons
               name='currency-exchange'
@@ -63,6 +70,8 @@ export function TabRoutes() {
         component={CepScreen}
         options={{
           tabBarLabel: 'CEP',
+          tabBarLabelPosition: 'beside-icon',
+          tabBarLabelStyle: { fontWeight: 'bold', color: cores.cep },
           tabBarIcon: () => (
             <MaterialIcons name='local-shipping' size={24} color={cores.cep} />
           ),
